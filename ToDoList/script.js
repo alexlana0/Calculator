@@ -1,5 +1,4 @@
 
-const display = documento.getElementById("display");
 
 function addToDisplay(input){
 
