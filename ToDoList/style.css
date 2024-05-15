@@ -1,6 +1,46 @@
+:root{
+    --colorCalculator: hsl(0, 0%, 15%);
+    --colorButton: hsl(0, 0%, 25%);
+    --colorButtonHover: hsl(0, 0%, 40%);
+    --colorButtonActive: hsl(0, 0%, 50%);
+    --colorOperatorButton: hsl(35, 100%, 55%);
+    --colorOperatorButtonHover: hsl(35, 100%, 65%);
+    --colorOperatorButtonActive: hsl(35, 100%, 75%);
+
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 90%);
+}
+
+#calculator{
+    background-color: var(--colorCalculator);
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    overflow: hidden;
+
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: var(--colorCalculator);
+
+}
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 25px;
 }
 
 button{
@@ -9,9 +49,29 @@ button{
     border: none;
     border-radius: 100%;
     color: white;
-    background-color: hsl(0, 0%, 25%);
+    background-color: var(--colorButton);
     font-size: 50px;
     font-weight: 200;
     text-align: center;
     cursor: pointer;
+}
+
+.operatorButton{
+    background-color: var(--colorOperatorButton);
+}
+
+.operatorButton:hover{
+    background-color: var(--colorOperatorButtonHover)
+}
+
+.operatorButton:active{
+    background-color: var(--colorOperatorButtonActive)
+}
+
+button:hover{
+    background-color: var(--colorButtonHover);
+}
+
+button:active{
+    background-color: var(--colorButtonActive);
 }
