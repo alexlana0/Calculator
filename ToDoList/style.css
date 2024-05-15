@@ -6,6 +6,7 @@
     --colorOperatorButton: hsl(35, 100%, 55%);
     --colorOperatorButtonHover: hsl(35, 100%, 65%);
     --colorOperatorButtonActive: hsl(35, 100%, 75%);
+    --colorNumber: white;
 
 }
 
@@ -33,6 +34,7 @@ body{
     font-size: 5rem;
     text-align: left;
     border: none;
+    color: var(--colorNumber);
     background-color: var(--colorCalculator);
 
 }
@@ -48,7 +50,7 @@ button{
     height: 100px;
     border: none;
     border-radius: 100%;
-    color: white;
+    color: var(--colorNumber);
     background-color: var(--colorButton);
     font-size: 50px;
     font-weight: 200;
